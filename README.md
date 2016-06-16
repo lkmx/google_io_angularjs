@@ -6,8 +6,8 @@ Coódigo generado durante la platica de AngularJS impartida por Victor Hugo Vall
 Instala Node 
 Corre los siguientes comandos:
 
-'
+`
 $ npm install -g bower
 $ npm install http-server
 $ bower install
-'
+`
