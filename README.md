@@ -1,19 +1,32 @@
-#AngularJS Demo
+# AngularJS - Google I/O Extended
 Código generado durante la platica de AngularJS impartida por Victor Hugo Valle durante el Google I/O Extended Ensenada.
 
-#Instalación
+## Prerrequisitos
 
-* Instala Node como se indica en [este video](https://www.youtube.com/watch?v=JuAOG41m2sU).
-* [Descarga](https://github.com/lkmx/google_io_angularjs/archive/master.zip) el zip del demo y descomprímelo.
-* Abre el CMD (o Terminal en Mac) y navega a la carpeta que acabas de descomprimir.
-* Corre los siguientes comandos:
+- NodeJS / NPM - Para manejar las herramientas de desarrollo, en este caso Bower. https://nodejs.org/en/
+- Bower - Para manejar las librerías de desarrollo, en este caso AngularJS. https://bower.io/#install-bower
+- http-server - Para levantar un Web Server *lightweight* que permita a la mini aplicación cargar los datos del JSON
+
+
+## Ejecución
+
+Una vez clonado el repositorio y dentro de la carpeta raíz para instalar las herramientas de desarrollo:
 
 ```
-$ npm install -g bower
-$ npm install -g http-server
+$ npm install
+```
+
+Para instalar AngularJS ejecutar:
+
+```
 $ bower install
+```
+
+Finalmente para levantar un servidor Web *lightweight* que nos permita hacer un request del JSON:
+
+```
 $ http-server
 ```
 
-* En el navegador, abre [http://localhost:8080](http://localhost:8080).
 
+Una vez levantado el servidor Web, el proyecto deberá estar disponible en http://localhost:8080
