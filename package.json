@@ -1,0 +1,30 @@
+{
+  "name": "google_io_angular",
+  "version": "1.0.0",
+  "description": "Codigo generado durante la platica de AngularJS impartida por Victor Hugo Valle durante el Google I/O Extended Ensenada - Junio 2016",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lkmx/google_io_angularjs"
+  },
+  "keywords": [
+    "angularjs",
+    "tutorial",
+    "gettingstarted"
+  ],
+  "author": "Victor Valle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkmx/google_io_angularjs/issues"
+  },
+  "homepage": "https://github.com/lkmx/google_io_angularjs"
+}

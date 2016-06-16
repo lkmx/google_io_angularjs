@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google I/O Extended</title>
+    <script src="lib/angular/angular.min.js"></script>
+</head>
+<body ng-app="ioApp">
+    <div ng-controller="ContactsController">
+        <p>
+            Buscar: <input type="text" ng-model="searchText">
+        </p>
+        <p>{{ searchText }}</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="contact in contacts | filter:searchText">
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.phone | phone}}</td>
+                </tr>
+            </tbody>
+        </table> 
+
+        <div ng-count></div>   
+
+    </div>
+
+    <script>
+        var ioApp = angular.module('ioApp', []);
+
+        ioApp.controller('ContactsController', function($scope, contactsLogic) {
+            contactsLogic.getContacts().success(function(data) {
+                $scope.contacts = data;
+            });
+        });
+
+        ioApp.factory('contactsLogic', function($http) {
+            return {
+                getContacts: function() {
+                    return $http.get('data.json');
+                }
+            };
+        });
+
+        ioApp.filter('phone', function() {
+            return function(phone) {
+                return '(' + phone.substring(0, 3) + ') ' + phone.substring(3);
+            }
+        });
+
+        ioApp.directive('ngCount', function() {
+            return {
+                template: 'Total de registros: {{ contacts.length }}'
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "google_io_angular",
+  "description": "Codigo generado durante la platica de AngularJS impartida por Victor Hugo Valle durante el Google I/O Extended Ensenada - Junio 2016",
+  "main": "index.js",
+  "authors": [
+    "Victor Valle"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "tutorial",
+    "gettingstarted"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
