@@ -5,7 +5,7 @@ Código generado durante la platica de AngularJS impartida por Victor Hugo Valle
 
 - NodeJS / NPM - Para manejar las herramientas de desarrollo, en este caso Bower. https://nodejs.org/en/
 - Bower - Para manejar las librerías de desarrollo, en este caso AngularJS. https://bower.io/#install-bower
-- http-server - Para levantar un Web Server *lightweight* que permita a la mini aplicación cargar los datos del JSON
+- http-server - Para levantar un Web Server *lightweight* que permita a la mini aplicación cargar los datos del JSON. https://www.npmjs.com/package/http-server
 
 
 ## Ejecución
@@ -29,4 +29,4 @@ $ http-server
 ```
 
 
-Una vez levantado el servidor Web, el proyecto deberá estar disponible en http://localhost:8080
+Una vez levantado el servidor Web, el proyecto deberá estar disponible en **http://localhost:8080**
