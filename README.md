@@ -3,4 +3,11 @@ Coódigo generado durante la platica de AngularJS impartida por Victor Hugo Vall
 
 #Pasos para la instalación del demo
 
-1. Instala Node 
+Instala Node 
+Corre los siguientes comandos:
+
+'
+$ npm install -g bower
+$ npm install http-server
+$ bower install
+'
